@@ -96,19 +96,19 @@
 
 
 
-  <meta name="description" content="title: 逃生模式 tags: sysloader and okos逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任">
+  <meta name="description" content="逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任何业务，只是在询问redirector并加载启动下载的okos.为了满足逃">
 <meta property="og:type" content="article">
 <meta property="og:title" content="什么是HEXO">
 <meta property="og:url" content="http://yoursite.com/2019/01/10/什么是HEXO/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title: 逃生模式 tags: sysloader and okos逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任">
+<meta property="og:description" content="逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任何业务，只是在询问redirector并加载启动下载的okos.为了满足逃">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://www.plantuml.com/plantuml/svg/ZLNBKXf155tFV0NPwIgLP3TOYLL9vGVo1HGC9IM2DM0PTvJ8KtcOe3488bPGoYX3AYOEZv6VcTipi-8NShjx613oMdKFVU-vvvvxkdaYhiRYFYM-jH4MsKQKhCu3VCb0_joi_F2A4fHLoBVVXdsnDKFBczKzoFIXk6jVx9bw1xJBTVczx3TpFPAumiFeUZI6Ip2aR6px51dpxSjZI6L9Ba5gEKEhGhvf9tL3AzZLalbzO0uQlC1uU02bQuo9xSJ2KLz0LaYjWC5MvXfFUOnN30KzIwHs0xMkCQh3xGd6ltlp6Z-XdXWF6ykU-9eSyIpjoB5bKQ2T84VIQ5dg1QWzwrlJqFey4JckOEPBhoX4ed7P4vQ3SL60orroLWFz8-GAbEuabDP8PH75_jJ1lIZ8aO27veboE2PxbYBHQJaUvPPRKUH0I97zyQY2nJ0l51J5xRLG6DFYofQyB4fknvw0Jzw8HZW2HyFYiu3ZOHPAgfNKoOawY_oKDJCUvb16EW93sxTqdUi27mxCJjCifp74KJ2P8f_LP-DX5RfrIpqoj1ovGUm3gtWFfMEZd_uRnf_KHeP4hN3nc0roMJggqhsX5PqPPBiJYqpEK7_AQFgReIMipDshnzY2X74pKWiIEU-HGiU5vPn8lSL9a-Ckeb5GUfPEuHGHW5MQT4p3tBwdxP9i6VADXUQmeg6Fp4gRkPsx4OlGF2yxXUw2PjmzI81VABmyB99_MQDJIBKS2EZzTBzf_tYlM0MyWuXc9mRMmo4hCsDLGQ2PTkR0xzlSzctwhT4PARQWN3JeLDDy3EWLv8mpM-J2y5mRypqkio8prGLkMMUXnrC7FPVc_8CtsBNGF-_bhA_HpioTWcGEhip1hIi4ChL6NJvdLmXAzJ6J5_DCoATpOp0mz2CuFOD-vJT-SguYkn1s8cbM6gJTX679klZA-StbIERf7LEOJMRgSdmGotk6TitVDlveEQwUUwcm5oHdfmgBu1DxyGmUWbrmJ4YrxMGRXWciJISYJQixjc55ENrdP7FNnRpDmKEA6a7RXz8XgILGOLvcck1EUFAW_SSi71LnOMyQsw6egxZWNyel">
-<meta property="og:updated_time" content="2019-01-10T15:09:37.110Z">
+<meta property="og:image" content="https://www.plantuml.com/plantuml/svg/ZLJ9Sjf043rBNq5kzYcLv2PSoI6f_42-W09Hfep19KWvlgcCMStc12_1O8mhs9HZ0wauiLXaVaOzaaxyGdfcXC2GxQHbkjzxtVrwdeYnk4-9YvBLUO0lQSYTcvKVNb62SXToxRTXNspTq79cTG_I0oZksXTxfju1xN93_Y3xpMoVg5Tu6Ds8nl0H32cRspv5ndpxyWYI6P9LIIrhQ5N8DUs4RcW5kreolm_DOOCJJ4PvA5rZJ6md5exw0h92QWKCjjBNUCfZl68ew5aXjHkezOnn7MvFCFxTczVu2NLrCcgiUkBhSiIpiYF7LaM1Le8QIQDbTI-WsxU-DGrjm1DHunfcllIAGYGQbprXEHWN1RZS9MSrq3z1ja3bJaCfHpA3AFPn1zz5GOu4F3HFbCCnsRCIYSxeU9HBjwR8WP0Y--DH1SamBnGKnUtrK1ZJuifxULMKt8ez0P-y6Orm18w6vFE0ar46IbqhePEJxZpoKrRCP9J5Dj8H6Dg-fUkyB_0nRtQQPZc58Ku74qdokVjiCgf2hsvr3mqjIsuGEsyLxw5qP0nIVyFuKxTH8UbMUFEO3R8PEghIlQ4LdHbaUbEBJC-m_rJHx9-XgLRwxjLZR472kBbM2n8vxvD2nuNbcaYznKMJenwYKL1wbahY5160CKqhfc5ktRDoIQOCkSPISSXew6EpqcPkvsv44fhdPQVGM-ePTmyAu0k5oyCY-PSrFeLaou60_a_tczQFUyKOS0SHpLQ7riC1evcpgY3GJ3kTz_ksjdrRVcjyHeejA1SDEjKK7mDw1JNZp9QrC3pNnlmT7_DDPbqNk6MT1psUEUYvjE0Vt63NGl_SotbVevsPEmN975wPmrkt4QZK6lVudDr6KAcFbRnOL4AEputXqD0FuVGC1fNV-CbPHROGjfemAmtIRiAeP5ryvVeMSYJpz8vrc4rcvdAy4CjxXdRDxpP-QJckNhYfi1OKPoSBo-1JU_4C7e9LS4n8jkr46qOgSjE9I3DsnpQCbCjtHhQmBkPj5XwIr0ZQFfGEI4t53dEQMO8xuUc5zX-pSBg83tQdiRTV">
+<meta property="og:updated_time" content="2019-01-10T15:18:18.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="什么是HEXO">
-<meta name="twitter:description" content="title: 逃生模式 tags: sysloader and okos逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任">
-<meta name="twitter:image" content="https://www.plantuml.com/plantuml/svg/ZLNBKXf155tFV0NPwIgLP3TOYLL9vGVo1HGC9IM2DM0PTvJ8KtcOe3488bPGoYX3AYOEZv6VcTipi-8NShjx613oMdKFVU-vvvvxkdaYhiRYFYM-jH4MsKQKhCu3VCb0_joi_F2A4fHLoBVVXdsnDKFBczKzoFIXk6jVx9bw1xJBTVczx3TpFPAumiFeUZI6Ip2aR6px51dpxSjZI6L9Ba5gEKEhGhvf9tL3AzZLalbzO0uQlC1uU02bQuo9xSJ2KLz0LaYjWC5MvXfFUOnN30KzIwHs0xMkCQh3xGd6ltlp6Z-XdXWF6ykU-9eSyIpjoB5bKQ2T84VIQ5dg1QWzwrlJqFey4JckOEPBhoX4ed7P4vQ3SL60orroLWFz8-GAbEuabDP8PH75_jJ1lIZ8aO27veboE2PxbYBHQJaUvPPRKUH0I97zyQY2nJ0l51J5xRLG6DFYofQyB4fknvw0Jzw8HZW2HyFYiu3ZOHPAgfNKoOawY_oKDJCUvb16EW93sxTqdUi27mxCJjCifp74KJ2P8f_LP-DX5RfrIpqoj1ovGUm3gtWFfMEZd_uRnf_KHeP4hN3nc0roMJggqhsX5PqPPBiJYqpEK7_AQFgReIMipDshnzY2X74pKWiIEU-HGiU5vPn8lSL9a-Ckeb5GUfPEuHGHW5MQT4p3tBwdxP9i6VADXUQmeg6Fp4gRkPsx4OlGF2yxXUw2PjmzI81VABmyB99_MQDJIBKS2EZzTBzf_tYlM0MyWuXc9mRMmo4hCsDLGQ2PTkR0xzlSzctwhT4PARQWN3JeLDDy3EWLv8mpM-J2y5mRypqkio8prGLkMMUXnrC7FPVc_8CtsBNGF-_bhA_HpioTWcGEhip1hIi4ChL6NJvdLmXAzJ6J5_DCoATpOp0mz2CuFOD-vJT-SguYkn1s8cbM6gJTX679klZA-StbIERf7LEOJMRgSdmGotk6TitVDlveEQwUUwcm5oHdfmgBu1DxyGmUWbrmJ4YrxMGRXWciJISYJQixjc55ENrdP7FNnRpDmKEA6a7RXz8XgILGOLvcck1EUFAW_SSi71LnOMyQsw6egxZWNyel">
+<meta name="twitter:description" content="逃生模式最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。在这个模式下，AP在无法访问到redirector的情况下也能正常使用。 设计在之前设计中，sysloader下没有加载任何业务，只是在询问redirector并加载启动下载的okos.为了满足逃">
+<meta name="twitter:image" content="https://www.plantuml.com/plantuml/svg/ZLJ9Sjf043rBNq5kzYcLv2PSoI6f_42-W09Hfep19KWvlgcCMStc12_1O8mhs9HZ0wauiLXaVaOzaaxyGdfcXC2GxQHbkjzxtVrwdeYnk4-9YvBLUO0lQSYTcvKVNb62SXToxRTXNspTq79cTG_I0oZksXTxfju1xN93_Y3xpMoVg5Tu6Ds8nl0H32cRspv5ndpxyWYI6P9LIIrhQ5N8DUs4RcW5kreolm_DOOCJJ4PvA5rZJ6md5exw0h92QWKCjjBNUCfZl68ew5aXjHkezOnn7MvFCFxTczVu2NLrCcgiUkBhSiIpiYF7LaM1Le8QIQDbTI-WsxU-DGrjm1DHunfcllIAGYGQbprXEHWN1RZS9MSrq3z1ja3bJaCfHpA3AFPn1zz5GOu4F3HFbCCnsRCIYSxeU9HBjwR8WP0Y--DH1SamBnGKnUtrK1ZJuifxULMKt8ez0P-y6Orm18w6vFE0ar46IbqhePEJxZpoKrRCP9J5Dj8H6Dg-fUkyB_0nRtQQPZc58Ku74qdokVjiCgf2hsvr3mqjIsuGEsyLxw5qP0nIVyFuKxTH8UbMUFEO3R8PEghIlQ4LdHbaUbEBJC-m_rJHx9-XgLRwxjLZR472kBbM2n8vxvD2nuNbcaYznKMJenwYKL1wbahY5160CKqhfc5ktRDoIQOCkSPISSXew6EpqcPkvsv44fhdPQVGM-ePTmyAu0k5oyCY-PSrFeLaou60_a_tczQFUyKOS0SHpLQ7riC1evcpgY3GJ3kTz_ksjdrRVcjyHeejA1SDEjKK7mDw1JNZp9QrC3pNnlmT7_DDPbqNk6MT1psUEUYvjE0Vt63NGl_SotbVevsPEmN975wPmrkt4QZK6lVudDr6KAcFbRnOL4AEputXqD0FuVGC1fNV-CbPHROGjfemAmtIRiAeP5ryvVeMSYJpz8vrc4rcvdAy4CjxXdRDxpP-QJckNhYfi1OKPoSBo-1JU_4C7e9LS4n8jkr46qOgSjE9I3DsnpQCbCjtHhQmBkPj5XwIr0ZQFfGEI4t53dEQMO8xuUc5zX-pSBg83tQdiRTV">
 
 
 
@@ -333,7 +333,7 @@
                 
               
 
-              <time title="Created: 2019-01-10 14:30:54 / Modified: 23:09:37" itemprop="dateCreated datePublished" datetime="2019-01-10T14:30:54+08:00">2019-01-10</time>
+              <time title="Created: 2019-01-10 14:30:54 / Modified: 23:18:18" itemprop="dateCreated datePublished" datetime="2019-01-10T14:30:54+08:00">2019-01-10</time>
             
 
             
@@ -371,9 +371,7 @@
       
 
       
-        <hr>
-<p>title: 逃生模式</p>
-<h2 id="tags-sysloader-and-okos"><a href="#tags-sysloader-and-okos" class="headerlink" title="tags: sysloader and okos"></a>tags: sysloader and okos</h2><h1 id="逃生模式"><a href="#逃生模式" class="headerlink" title="逃生模式"></a>逃生模式</h1><p>最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。<br>在这个模式下，AP在无法访问到redirector的情况下也能正常使用。</p>
+        <h1 id="逃生模式"><a href="#逃生模式" class="headerlink" title="逃生模式"></a>逃生模式</h1><p>最初设计时AP会先通过redirector获取到okos下载地址后，下载okos并启动wifi才进入工作模式，现在客户现场需要在没有redirector情况下，AP也能正常工作，就提出了逃生模式。<br>在这个模式下，AP在无法访问到redirector的情况下也能正常使用。</p>
 <h1 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h1><p>在之前设计中，sysloader下没有加载任何业务，只是在询问redirector并加载启动下载的okos.<br>为了满足逃生模式需求。做如下改动。</p>
 <ol>
 <li>在Flash中使用完整的okosimage，其可独立提供业务服务。</li>
@@ -383,7 +381,7 @@
 <li>基于okos分支拉出新分支okos_firmware分支，修改生成image的类型，优化image大小，修改构建上传过程，以生成新的firmware镜像。</li>
 <li>在okos_firmware中实现新的查询，下载和加载新okos的流程</li>
 </ol>
-<h1 id="新的okos下载加载流程"><a href="#新的okos下载加载流程" class="headerlink" title="新的okos下载加载流程"></a>新的okos下载加载流程</h1><p><img src="https://www.plantuml.com/plantuml/svg/ZLNBKXf155tFV0NPwIgLP3TOYLL9vGVo1HGC9IM2DM0PTvJ8KtcOe3488bPGoYX3AYOEZv6VcTipi-8NShjx613oMdKFVU-vvvvxkdaYhiRYFYM-jH4MsKQKhCu3VCb0_joi_F2A4fHLoBVVXdsnDKFBczKzoFIXk6jVx9bw1xJBTVczx3TpFPAumiFeUZI6Ip2aR6px51dpxSjZI6L9Ba5gEKEhGhvf9tL3AzZLalbzO0uQlC1uU02bQuo9xSJ2KLz0LaYjWC5MvXfFUOnN30KzIwHs0xMkCQh3xGd6ltlp6Z-XdXWF6ykU-9eSyIpjoB5bKQ2T84VIQ5dg1QWzwrlJqFey4JckOEPBhoX4ed7P4vQ3SL60orroLWFz8-GAbEuabDP8PH75_jJ1lIZ8aO27veboE2PxbYBHQJaUvPPRKUH0I97zyQY2nJ0l51J5xRLG6DFYofQyB4fknvw0Jzw8HZW2HyFYiu3ZOHPAgfNKoOawY_oKDJCUvb16EW93sxTqdUi27mxCJjCifp74KJ2P8f_LP-DX5RfrIpqoj1ovGUm3gtWFfMEZd_uRnf_KHeP4hN3nc0roMJggqhsX5PqPPBiJYqpEK7_AQFgReIMipDshnzY2X74pKWiIEU-HGiU5vPn8lSL9a-Ckeb5GUfPEuHGHW5MQT4p3tBwdxP9i6VADXUQmeg6Fp4gRkPsx4OlGF2yxXUw2PjmzI81VABmyB99_MQDJIBKS2EZzTBzf_tYlM0MyWuXc9mRMmo4hCsDLGQ2PTkR0xzlSzctwhT4PARQWN3JeLDDy3EWLv8mpM-J2y5mRypqkio8prGLkMMUXnrC7FPVc_8CtsBNGF-_bhA_HpioTWcGEhip1hIi4ChL6NJvdLmXAzJ6J5_DCoATpOp0mz2CuFOD-vJT-SguYkn1s8cbM6gJTX679klZA-StbIERf7LEOJMRgSdmGotk6TitVDlveEQwUUwcm5oHdfmgBu1DxyGmUWbrmJ4YrxMGRXWciJISYJQixjc55ENrdP7FNnRpDmKEA6a7RXz8XgILGOLvcck1EUFAW_SSi71LnOMyQsw6egxZWNyel"></p>
+<h1 id="新的okos下载加载流程"><a href="#新的okos下载加载流程" class="headerlink" title="新的okos下载加载流程"></a>新的okos下载加载流程</h1><p><img src="https://www.plantuml.com/plantuml/svg/ZLJ9Sjf043rBNq5kzYcLv2PSoI6f_42-W09Hfep19KWvlgcCMStc12_1O8mhs9HZ0wauiLXaVaOzaaxyGdfcXC2GxQHbkjzxtVrwdeYnk4-9YvBLUO0lQSYTcvKVNb62SXToxRTXNspTq79cTG_I0oZksXTxfju1xN93_Y3xpMoVg5Tu6Ds8nl0H32cRspv5ndpxyWYI6P9LIIrhQ5N8DUs4RcW5kreolm_DOOCJJ4PvA5rZJ6md5exw0h92QWKCjjBNUCfZl68ew5aXjHkezOnn7MvFCFxTczVu2NLrCcgiUkBhSiIpiYF7LaM1Le8QIQDbTI-WsxU-DGrjm1DHunfcllIAGYGQbprXEHWN1RZS9MSrq3z1ja3bJaCfHpA3AFPn1zz5GOu4F3HFbCCnsRCIYSxeU9HBjwR8WP0Y--DH1SamBnGKnUtrK1ZJuifxULMKt8ez0P-y6Orm18w6vFE0ar46IbqhePEJxZpoKrRCP9J5Dj8H6Dg-fUkyB_0nRtQQPZc58Ku74qdokVjiCgf2hsvr3mqjIsuGEsyLxw5qP0nIVyFuKxTH8UbMUFEO3R8PEghIlQ4LdHbaUbEBJC-m_rJHx9-XgLRwxjLZR472kBbM2n8vxvD2nuNbcaYznKMJenwYKL1wbahY5160CKqhfc5ktRDoIQOCkSPISSXew6EpqcPkvsv44fhdPQVGM-ePTmyAu0k5oyCY-PSrFeLaou60_a_tczQFUyKOS0SHpLQ7riC1evcpgY3GJ3kTz_ksjdrRVcjyHeejA1SDEjKK7mDw1JNZp9QrC3pNnlmT7_DDPbqNk6MT1psUEUYvjE0Vt63NGl_SotbVevsPEmN975wPmrkt4QZK6lVudDr6KAcFbRnOL4AEputXqD0FuVGC1fNV-CbPHROGjfemAmtIRiAeP5ryvVeMSYJpz8vrc4rcvdAy4CjxXdRDxpP-QJckNhYfi1OKPoSBo-1JU_4C7e9LS4n8jkr46qOgSjE9I3DsnpQCbCjtHhQmBkPj5XwIr0ZQFfGEI4t53dEQMO8xuUc5zX-pSBg83tQdiRTV"></p>
 <h1 id="用户测试用例"><a href="#用户测试用例" class="headerlink" title="用户测试用例"></a>用户测试用例</h1><table>
 <thead>
 <tr>
@@ -555,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-sysloader-and-okos"><span class="nav-number">1.</span> <span class="nav-text">tags: sysloader and okos</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#逃生模式"><span class="nav-number"></span> <span class="nav-text">逃生模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计"><span class="nav-number"></span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#涉及的工作"><span class="nav-number"></span> <span class="nav-text">涉及的工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的okos下载加载流程"><span class="nav-number"></span> <span class="nav-text">新的okos下载加载流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用户测试用例"><span class="nav-number"></span> <span class="nav-text">用户测试用例</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#逃生模式"><span class="nav-number">1.</span> <span class="nav-text">逃生模式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计"><span class="nav-number">2.</span> <span class="nav-text">设计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#涉及的工作"><span class="nav-number">3.</span> <span class="nav-text">涉及的工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#新的okos下载加载流程"><span class="nav-number">4.</span> <span class="nav-text">新的okos下载加载流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用户测试用例"><span class="nav-number">5.</span> <span class="nav-text">用户测试用例</span></a></li></ol></div>
             
 
           </div>
